@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:hover {
+    color: blue;
+  }
+  
+  #choiceContainer {
+    text-align: center;
+  }
+  
+  #valueContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  
+  #valueContainer > * {
+    padding: 1rem;
+    width: 25%;
+  }
+  
+  #choice {
+    height: 2.5rem;
+    margin: 1rem;
+    background: white;
+    border-radius: 3px;
+  }
+  

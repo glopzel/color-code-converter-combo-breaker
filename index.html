@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color codes</title>
+</head>
+<body>
+    <main>
+      <section id='choiceContainer'>
+        <h1>Choose a color</h1>
+        <i class="fas fa-arrow-down"></i>
+        <section>
+          <form action="">
+            <input id='choice' type="color">
+          </form>
+          <label for="choice">(RGB, HSL, HEX) </label>
+        </section>
+  
+      </section>
+  
+      <section id='valueContainer'>
+  
+        <section>
+          <h2>
+            RGB
+          </h2>
+          <p id='rgbText'>rgb(255, 255, 255)</p>
+          <a href="#" id='rgbAnchor'><i class="fa-regular fa-copy"></i></a>
+        </section>
+  
+        <section>
+          <h2>
+            Hex
+          </h2>
+          <p id='hexText'>#FFFFFF</p>
+          <a href="#" id='hexAnchor'><i class="fa-regular fa-copy"></i></a>
+        </section>
+  
+        <section>
+          <h2>
+            CMYK
+          </h2>
+          <p id='cmText'>cmyk(0, 0, 0, 0)</p>
+          <a href="#" id='cmAnchor'><i class="fa-regular fa-copy"></i></a>
+        </section>
+        <section>
+          <h2>
+            HSV
+          </h2>
+          <p id='hsvText'>hsv(0&deg;, 0%, 100%)</p>
+          <a href="#" href="#" id='hsvAnchor'><i class="fa-regular fa-copy"></i></a>
+        </section>
+  
+      </section>
+  
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
