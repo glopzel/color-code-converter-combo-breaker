@@ -13,8 +13,8 @@
     color: black;
   }
   
-  a:hover {
-    color: blue;
+  img {
+      width: 20px;
   }
   
   #choiceContainer {

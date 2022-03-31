@@ -15,15 +15,19 @@ const onClick = function() {
   switch(this.id) {
     case 'rgbAnchor':
       copyToClipboard(rgbVal);
+      alert('copied to the clipboard');
       break;
     case 'hexAnchor':
       copyToClipboard(hexVal);
+      alert('copied to the clipboard');
       break;
     case 'cmAnchor':
       copyToClipboard(cmText);
+      alert('copied to the clipboard');
       break;
     case 'hsvAnchor':
       copyToClipboard(hsvText);
+      alert('copied to the clipboard');
       break;
   }
 }
