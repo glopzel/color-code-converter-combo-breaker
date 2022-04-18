@@ -5,38 +5,6 @@ const rgbVal = document.querySelector("#rgbText");
 const cmykVal = document.querySelector('#cmText');
 const hsvVal = document.querySelector('#hsvText');
 
-const anchorRGB = document.querySelector('#rgbAnchor');
-const anchorHex = document.querySelector('#hexAnchor');
-const anchorCMYK = document.querySelector('#cmAnchor');
-const anchorHSV = document.querySelector('#hsvAnchor');
-
-const onClick = function() {
-  // console.log(this.id, this.class, this.innerHTML);
-  switch(this.id) {
-    case 'rgbAnchor':
-      copyToClipboard(rgbVal);
-      alert('copied to the clipboard');
-      break;
-    case 'hexAnchor':
-      copyToClipboard(hexVal);
-      alert('copied to the clipboard');
-      break;
-    case 'cmAnchor':
-      copyToClipboard(cmText);
-      alert('copied to the clipboard');
-      break;
-    case 'hsvAnchor':
-      copyToClipboard(hsvText);
-      alert('copied to the clipboard');
-      break;
-  }
-}
-
-anchorRGB.onclick = onClick;
-anchorHex.onclick = onClick;
-anchorCMYK.onclick = onClick;
-anchorHSV.onclick = onClick;
-
 // event.target.value returns the Hex
 colorPicker.addEventListener("change", watchColorPicker, false);
 colorPicker.addEventListener("change", watchColorPicker);
@@ -106,13 +74,3 @@ function vColor(r, g, b) {
   
   hsvVal.innerText = `hsv(${(Math.round(h))}°, ${Math.round(s)}%, ${Math.round(v)}%)`;
 }
-
-function copyToClipboard(idVal) {
-  console.log(idVal.innerText);
-    let copyText = idVal.innerText;
-    navigator.clipboard.writeText(copyText).then(() => {
-        // Alert the user that the action took place.
-        // Nobody likes hidden stuff being done under the hood!
-        console.log("Copied to clipboard");
-    });
-  }
